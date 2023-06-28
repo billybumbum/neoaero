@@ -26,4 +26,6 @@ new fullpage('#fullpage', {
 
 const video = document.getElementById('section-one-video');
 
-video.play();
+if (video) {
+	video.play();
+  }
