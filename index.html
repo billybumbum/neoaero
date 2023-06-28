@@ -141,29 +141,29 @@
 		<script src="js/index.js"></script>
 
 		<script>
-			const backgroundVideo = document.getElementById('background-video');
-	
+			const video = document.getElementById('section-one-video');
+
 			// Pause the video when it's out of the viewport
 			function pauseVideo() {
-				backgroundVideo.pause();
+			  video.pause();
 			}
-	
+			
 			// Play the video when it's in the viewport
 			function playVideo() {
-				backgroundVideo.play();
+			  video.play();
 			}
-	
+			
 			// Check if the video is in the viewport and play or pause accordingly
 			function handleVideoScroll() {
-				const rect = backgroundVideo.getBoundingClientRect();
-				const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
-				if (isInViewport) {
-					playVideo();
-				} else {
-					pauseVideo();
-				}
+			  const rect = video.getBoundingClientRect();
+			  const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+			  if (isInViewport) {
+			    playVideo();
+			  } else {
+			    pauseVideo();
+			  }
 			}
-	
+			
 			// Attach event listener to scroll event
 			window.addEventListener('scroll', handleVideoScroll);
 		</script>
