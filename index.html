@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>NeoAeronautics</title>
+		<link rel="icon" href="media/neo_logo.png" type="logo">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+			integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/variable.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/section.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+	</head>
+	<body>
+		<div class="blur__overlay"></div>
+
+		<header class="header">
+			<a class="header__left" href="#">
+				<img class="header__logo" src="media/neo_logo.png" alt="boooo" />
+			</a>
+
+			<ul class="header__middle">
+			<li>
+
+			</li>
+			</ul>
+
+			<div class="header__right">
+				<a class="header__nav__btn" href="#">About Us</a>
+				<a class="header__nav__btn menu__btn" href="#">Menu</a>
+			</div>
+		</header>
+
+		<nav class="navigation">
+			<div class="close__btn__container">
+				<img class="navigation__close__btn" src="media/Neo-Aeronautics-White.png" alt="" />
+			</div>
+
+			<ul>
+				<li class="link__in__middle"><a class="nav__link" href="#">Model S</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="#">Model 3</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="#">Model X</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="#">Model Y</a></li>
+				<li class="link__in__middle">
+					<a class="nav__link" href="#">Solar roofs</a>
+				</li>
+				<li class="link__in__middle">
+					<a class="nav__link" href="#">Solar panels</a>
+				</li>
+				<li><a class="nav__link" href="#">Neo Crimsion Club </a></li>
+				<li><a class="nav__link" href="#">SelectUSA </a></li>
+				<li><a class="nav__link" href="#">Team </a></li>
+				<li><a class="nav__link" href="#">Roadmap </a></li>
+			</ul>
+		</nav>
+
+	<section id="fullpage">
+	<section class="section section-one">
+		<video id="background-video" autoplay muted loop class="section__background-video">
+			<source src="./media/test1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		
+
+		<div class="section__content">
+			<h1 class="section__content__title" style="color: white">Fly with Style</h1>
+			<h2 class="section__content__subtitle" style="color: white">
+				Elevate your journey with sleek sophistication
+			</h2>
+		</div>
+
+		<div class="section__action__container">
+			<a class="section__action__btn action__btn__primary" href="#">Join The Club</a>
+			<a class="section__action__btn action__btn__secondary" href="#">Customize Now</a>
+		</div>
+	</section>
+	
+
+
+<section class="section two">
+	<div class="section__content_bottom">
+		<h1 class="section__content__title" style="color: white">The Futuristic Marvel</h1>
+		<h2 class="section__content__subtitle" style="color: white">
+			Experience the next era of aviation
+		</h2>
+	</div>
+</section>
+
+<section class="section three">
+	<div class="section__content_bottom">
+		<h1 class="section__content__title" style="color: white">Unleash Your Adventure</h1>
+		<h2 class="section__content__subtitle" style="color: white">
+			Thrilling high-speed flights for limitless exploration
+		</h2>
+	</div>
+</section>
+
+<section class="section four">
+	<div class="section__content_bottom">
+		<h1 class="section__content__title" style="color: white">The Ultimate Companion</h1>
+		<h2 class="section__content__subtitle" style="color: white">
+			Luxury and comfort in seamless aviation
+		</h2>
+	</div>
+</section>
+
+<section class="section five">
+	<div class="section__content_bottom">
+		<h1 class="section__content__title" style="color: white">New State of Art Technology</h1>
+		<h2 class="section__content__subtitle" style="color: white">
+			Revolutionizing aviation with advanced tech
+		</h2>
+	</div>
+</section>
+
+<section class="section six">
+	<div class="section__content">
+		<h1 class="section__content__title" style="color: white">Safe and Reliable</h1>
+		<h2 class="section__content__subtitle" style="color: white">
+			Uncompromising safety and dependable performance
+		</h2>
+	</div>
+</section>
+
+<section class="section seven">
+	<div class="section__content">
+		<h1 class="section__content__title" style="color: white">Neo Crimson Club</h1>
+		<h2 class="section__content__subtitle" style="color: white">
+			Join the elite community of aviation enthusiasts
+		</h2>
+	</div>
+</section>
+
+		</section>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+			integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script src="js/index.js"></script>
+
+		<script>
+			const backgroundVideo = document.getElementById('background-video');
+	
+			// Pause the video when it's out of the viewport
+			function pauseVideo() {
+				backgroundVideo.pause();
+			}
+	
+			// Play the video when it's in the viewport
+			function playVideo() {
+				backgroundVideo.play();
+			}
+	
+			// Check if the video is in the viewport and play or pause accordingly
+			function handleVideoScroll() {
+				const rect = backgroundVideo.getBoundingClientRect();
+				const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+				if (isInViewport) {
+					playVideo();
+				} else {
+					pauseVideo();
+				}
+			}
+	
+			// Attach event listener to scroll event
+			window.addEventListener('scroll', handleVideoScroll);
+		</script>
+	</body>
+	
+</html>
