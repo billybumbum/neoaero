@@ -21,9 +21,7 @@ const toggleNavigation = () => {
 
 const CLICK = 'click'
 
-menuBtn.addEventListener(CLICK, toggleNavigation)
-navCloseBtn.addEventListener(CLICK, toggleNavigation)
-blurOverlay.addEventListener(CLICK, toggleNavigation)
+
 
 new fullpage('#fullpage', {
 	autoScrolling: true,
