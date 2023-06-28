@@ -7,9 +7,6 @@ const blurOverlay = document.querySelector('.blur__overlay')
 
 const IS_ACTIVE = 'is--active'
 
-const video = document.getElementById('section-one-video');
-
-
 const toggleNavigation = () => {
 	navigation.classList.toggle(IS_ACTIVE)
 	blurOverlay.classList.toggle(IS_ACTIVE)
@@ -25,6 +22,18 @@ blurOverlay.addEventListener(CLICK, toggleNavigation)
 new fullpage('#fullpage', {
 	autoScrolling: true,
 	scrollBar: true,
+    afterLoad: function(origin, destination, direction){
+        const video = document.getElementById('section-one-video');
+        // if we've scrolled to the section containing the video, play it
+        if(destination.index == 0){
+            video.play();
+        }
+    },
+    onLeave: function(origin, destination, direction){
+        const video = document.getElementById('section-one-video');
+        // if we're leaving the section with the video, pause it
+        if(origin.index == 0){
+            video.pause();
+        }
+    }
 })
-
-
