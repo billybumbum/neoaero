@@ -9,9 +9,6 @@ const IS_ACTIVE = 'is--active'
 
 const video = document.getElementById('section-one-video');
 
-if (video) {
-	video.play();
-  }
 
 const toggleNavigation = () => {
 	navigation.classList.toggle(IS_ACTIVE)
@@ -21,7 +18,9 @@ const toggleNavigation = () => {
 
 const CLICK = 'click'
 
-
+menuBtn.addEventListener(CLICK, toggleNavigation)
+navCloseBtn.addEventListener(CLICK, toggleNavigation)
+blurOverlay.addEventListener(CLICK, toggleNavigation)
 
 new fullpage('#fullpage', {
 	autoScrolling: true,
