@@ -1,171 +1,277 @@
-/* Slider */
-.slick-carousel .slick-dots li {
-    display: none;
-  }  
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>NeoAeronautics</title>
+		<link rel="icon" href="media/neo_logo.png" type="logo">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+			integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/variable.css" />
+		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/section.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
 
-.slick-slider
-{
-    position: relative;
-    
-    display: block;
-    box-sizing: border-box;
+				<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="css/slick.css" />
 
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
 
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
+		
+	</head>
+	<body>
+		<div class="blur__overlay"></div>
 
-.slick-list
-{
-    position: relative;
-    
-    display: block;
-    overflow: hidden;
+		<header class="header">
+			<a class="header__left" href="#">
+				<img class="header__logo" src="media/neo_logo.png" alt="boooo" />
+			</a>
 
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
+			<ul class="header__middle">
+				<a class="header__nav__btn" href="#">CRAFT</a>
+				<a class="header__nav__btn" href="#">TECHNICAL SPECIFICATION</a>
+				<a class="header__nav__btn" href="#">GEOFENCE</a>
+				<a class="header__nav__btn" href="#"></a>
+			<li>
 
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
+			</li>
+			</ul>
 
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
+			<div class="header__right">
+				<a class="header__nav__btn" href="#"></a>
+				<a class="header__nav__btn menu__btn" href="#">MENU</a>
+			</div>
+		</header>
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
+		<nav class="navigation">
+			<div class="close__btn__container">
+				<img class="navigation__close__btn" src="media/Neo-Aeronautics-White.png" alt="" />
+			</div>
 
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
+			<ul>
+				<li><a class="nav__link" href="#">CONFIGURATOR</a></li>
+				<li><a class="nav__link" href="#">TEAM </a></li>
 
-.slick-slide
-{
-    display: none;
-    float: left;
+			</ul>
+		</nav>
 
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
+	<section id="fullpage">
+		<section class="section section-one">
+			<video id="section-one-video" autoplay muted loop playsinline class="section__background-video">
+				<source src="media/test4.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		
+			<div class="section__content">
+				<h1 class="section__content__title" style="color: white">
 
-    height: auto;
-
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: inside;
-}
-
-.slick-prev,
-.slick-next {
-  display: none !important;
-}
-
-.carousel-item {
-    position: relative;
-  }
-  
-  .carousel-item-text {
-    position: absolute;
-	top:60%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	text-align: center;
-	text-transform: capitalize;
+				</h1>
+				<h2 class="section__content__subtitle" style="color: white">
+					
+				</h2>
+			</div>
+		
+			<div class="section__action__container">
+				<a class="section__action__btn action__btn__primary" href="#">JOIN US</a>
+				<a class="section__action__btn action__btn__secondary" href="#">CONFIGURATOR</a>
+			</div>
+	</section>
 	
-    color: #ffffff;
-  }
-  
-  .carousel-item-text h1 {
-    font-size: 4rem;
-	font-weight: bold;
-	margin-bottom: 1rem;
-	padding: 0 30px; /* Add desired padding value */
-  }
-  
-  .carousel-item-text h2 {
-    font-size: 2rem;
-	font-weight: 300;
-	padding: 0 30px; /* Add desired padding value */
-  }
-  
 
-  .carousel-item-text.clubhouse {
-    position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	text-align: center;
-	text-transform: capitalize;
+
+<section class="section two">
+	<div class="section__content_middle">
+		<h2 class="section__content__title" style="color: white; margin-bottom: 50px;">
+			NEO IS THE HELICOPTER YOU HAVE ALWAYS WANTED, EXQUISITE IN EVERY DETAIL, COMBINING EXCEPTIONAL PERFORMANCE, SAFETY AND EASE OF FLYING WITH AN OUTSTANDING OWNERSHIP MODEL.
+		</h2>
+		
+		<h2 class="section__content__subtitle" style="color: white; margin-bottom: 20px;"></h2>
+		<h3 class="section__content__subtitle" style="color: white;">
+			<p style="margin-bottom: 5px;">MIKE REEVES</p> 
+			<p style="margin-bottom: 0;">CREATIVE DIRECTOR</p>
+		</h3>
+	</div>
+</section>
+
+<section class="section three">
+	<div class="carousel">
+	  <div class="slick-carousel">
+		<div class="carousel-item">
+		  <img src="media/Section3_Pic1.jpg" alt="Image 1" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			<div class="carousel-item-text" style="color: rgb(0, 0, 0);">
+				<h1>AIRCRAFT</h1>
+				<h2>Soar in style with our exquisite airborne marvels. The epitome of luxury and elegance.</h2>
+			</div>     
+		</div>
+		<div class="carousel-item">
+		  <img src="media/Section3_Pic2.jpg" alt="Image 2" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+		  <div class="carousel-item-text">
+			<h1>AIRCRAFT</h1>
+			<h2>Soar in style with our exquisite airborne marvels. The epitome of luxury and elegance.</h2>
+			</div>     
+		</div>
+		<div class="carousel-item">
+		  <img src="media/Section3_Pic3.jpg" alt="Image 3" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+		  <div class="carousel-item-text">
+			<h1>AIRCRAFT</h1>
+			<h2>Soar in style with our exquisite airborne marvels. The epitome of luxury and elegance.</h2>
+		</div>     
+		</div>
+		<div class="carousel-item">
+			<img src="media/Section3_Pic4.jpg" alt="Image 3" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			<div class="carousel-item-text">
+			  <h1>AIRCRAFT</h1>
+			  <h2>Soar in style with our exquisite airborne marvels. The epitome of luxury and elegance.</h2>
+		  </div>
+	  </div>
+	</div>
+  </section>
+
+<section class="section four">
+	<div class="carousel">
+		<div class="slick-carousel">
+		  <div class="carousel-item">
+			<img src="media/Section4_Pic1.jpg" alt="Image 1" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			  <div class="carousel-item-text">
+				  <h1>TECHNICAL SPECIFICATION</h1>
+				  <h2>Precision engineering meets cutting-edge innovation for unparalleled performance and reliability.</h2>
+			  </div>     
+		  </div>
+		  <div class="carousel-item">
+			<img src="media/Section4_Pic2.jpg" alt="Image 2" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			<div class="carousel-item-text">
+			  <h1>TECHNICAL SPECIFICATION</h1>
+			  <h2>Precision engineering meets cutting-edge innovation for unparalleled performance and reliability.</h2>
+			  </div>     
+		  </div>
+		  <div class="carousel-item">
+			<img src="media/Section4_Pic3.jpg" alt="Image 3" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			<div class="carousel-item-text">
+			  <h1>TECHNICAL SPECIFICATION</h1>
+			  <h2>Precision engineering meets cutting-edge innovation for unparalleled performance and reliability.</h2>
+		  	</div>     
+		  </div>
+	  </div>
+	</section>
+
+<section class="section five">
+	<div class="carousel">
+		<div class="slick-carousel">
+		  <div class="carousel-item">
+			<img src="media/Section5_Pic1.jpg" alt="Image 1" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			  <div class="carousel-item-text" style="color: black">
+				  <h1>GEOFENCE</h1>
+				  <h2>Unleash your wanderlust within our secure airspace sanctuary. Freedom without boundaries.</h2>
+			  </div>     
+		  </div>
+		  
+	  </div>
+	</section>
+
+<section class="section six">
+	<div class="carousel">
+		<div class="slick-carousel">
+		  
+		  <div class="carousel-item ">
+			<img src="media/Section6_Pic1.jpg" alt="Image 2" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			<div class="carousel-item-text clubhouse ">
+			  <h1>CLUBHOUSE</h1>
+			  <h2>Indulge in opulence at our elite haven. Where dreams take flight and connections take root.</h2>
+			  </div> 
+			  <div class="section__action__container">
+				<a class="section__action__btn action__btn__primary" href="#">JOIN US</a>
+			</div>    
+		  </div>
+		  <div class="carousel-item">
+			<img src="media/Section6_Pic2.jpg" alt="Image 3" style="width: 100%; height: 100vh; object-fit: cover; position: relative;">
+			<div class="carousel-item-text clubhouse ">
+			  <h1>CLUBHOUSE</h1>
+			  <h2>Indulge in opulence at our elite haven. Where dreams take flight and connections take root.</h2>
+		  	<div class="section__action__container">
+				<a class="section__action__btn action__btn__primary" href="#">JOIN US</a>
+			</div>  
+			</div>     
+		  </div>
+	  </div>
+
+	  
+	</section>
+
 	
-    color: #ffffff;
-  }
 
+
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+			integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script src="js/index.js"></script>
+
+		<script>
+			const video = document.getElementById('section-one-video');
+
+				// Pause the video when it's out of the viewport
+				function pauseVideo() {
+				video.pause();
+				}
+
+				// Play the video when it's in the viewport
+				function playVideo() {
+				video.play();
+				}
+
+				// Check if the video is in the viewport and play or pause accordingly
+				function handleVideoScroll() {
+				const rect = video.getBoundingClientRect();
+				const isInViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+				if (isInViewport) {
+					playVideo();
+				} else {
+					pauseVideo();
+				}
+				}
+
+				// Attach event listener to scroll event
+				window.addEventListener('scroll', handleVideoScroll);
+		</script>
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Slick JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.carousel').slick({
+					// You can add settings here
+				});
+			});
+			</script>
+			
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.slick-carousel').slick({
+						dots: true,
+						infinite: true,
+						speed: 500,
+						slidesToShow: 1,
+						adaptiveHeight: true
+					});
+				});
+			</script>
+
+	</body>
+	
+</html>
