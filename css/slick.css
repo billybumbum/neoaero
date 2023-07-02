@@ -133,7 +133,7 @@
   
   .carousel-item-text {
     position: absolute;
-	top: 70%;
+	top:60%;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
@@ -159,7 +159,7 @@
 
   .carousel-item-text.clubhouse {
     position: absolute;
-	top: 65%;
+	top: 55%;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
